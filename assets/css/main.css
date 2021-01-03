@@ -287,7 +287,14 @@ input, select, textarea {
 			}
 
 		}
-
+/* Centered text */
+.centered {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+  }
+  
 /* Row */
 
 	.row {
@@ -376,6 +383,14 @@ input, select, textarea {
 		.row > .col-6 {
 			width: 50%;
 		}
+		
+			/* Centered text */
+			.row.col-6.centered {
+				position: absolute;
+				top: 25%;
+				left: 50%;
+				/* transform: translate(-50%, -25%); */
+			}
 
 		.row > .off-6 {
 			margin-left: 50%;
@@ -2253,7 +2268,13 @@ input, select, textarea {
 			}
 
 			.main > .content.style2 {
-				background: url("images/bgtr.svg") top right no-repeat, url("images/bgbl.svg") bottom left no-repeat, url("images/overlay.png"), linear-gradient(45deg, #384955, #655361, #85505f);
+				/* background: url("images/bgtr.svg") top right no-repeat, url("images/bgbl.svg") bottom left no-repeat, url("images/overlay.png"), linear-gradient(45deg, #384955, #655361, #85505f); */
+				position: relative;
+				margin: 0;
+				background-image: url("images/overlay.png"), url("../../images/style2.jpg");
+				background-size: auto, cover;
+				background-position: top left, center center;
+				background-repeat: repeat, no-repeat;
 			}
 
 			.main > .content.style3 {
