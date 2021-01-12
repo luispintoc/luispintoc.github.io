@@ -2274,7 +2274,7 @@ input, select, textarea {
 				/* background: url("images/bgtr.svg") top right no-repeat, url("images/bgbl.svg") bottom left no-repeat, url("images/overlay.png"), linear-gradient(45deg, #384955, #655361, #85505f); */
 				position: relative;
 				margin: 0;
-				background-image: url("images/overlay.png"), url("../../images/style2_2.jpg");
+				background-image: url("images/overlay.png"), url("../../images/style2.jpg");
 				background-size: auto, cover;
 				background-position: top left, center center;
 				background-repeat: repeat, no-repeat;
