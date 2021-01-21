@@ -2018,6 +2018,56 @@ input, select, textarea {
 			background: rgba(255, 255, 255, 0.1);
 		}
 
+
+
+/* Bar */
+	
+	.bar{
+		background-color: #EEE;
+		padding: 2px;
+		border-radius: 20px;
+		margin-bottom: 5px;
+		font-size: 14px;
+		color: #FFF;
+		font-weight: 550;
+		text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+	}
+	.bar::before{
+		content:  attr(data-skill);
+		background-color: #f3b0ff; 
+		display: inline-block;
+		padding: 2px 0 5px 15px;
+		border-radius: 20px;
+		animation: load 2s 0s;
+		-webkit-animation: load 2s 0s;
+		-moz-animation: load 2s 0s;
+		-o-animation: load 2s 0s;
+	}
+	
+	.bar.front::before{
+		background-color: #62a562;
+	}
+	.bar.back::before{
+		background-color: #a6cfe3;
+	}
+	
+	.bar.learning::before{
+		width: calc(20%);
+	}
+	.bar.basic::before{
+		width: calc(40%);
+	}
+	.bar.intermediate::before{
+		width: calc(60%);
+	}
+	.bar.advanced::before{
+		width: calc(80%);
+	}
+	.bar.expert::before{
+		width: calc(100% - 5px);
+	}
+  
+
 /* Button */
 
 	input[type="button"],
@@ -2176,7 +2226,7 @@ input, select, textarea {
 			line-height: 1;
 			text-transform: none !important;
 			font-family: 'Font Awesome 5 Free';
-			font-weight: 400;
+			font-weight: 600;
 		}
 
 		.icon:before {
@@ -2194,6 +2244,8 @@ input, select, textarea {
 		.icon.brands:before {
 			font-family: 'Font Awesome 5 Brands';
 		}
+
+
 
 /* Header */
 
@@ -2214,6 +2266,7 @@ input, select, textarea {
 			line-height: 1.25em;
 			margin-bottom: 0;
 		}
+		
 
 		#header header p {
 			margin-top: 1.25em;
@@ -2281,13 +2334,29 @@ input, select, textarea {
 			}
 
 			.main > .content.style3 {
-				background: url("images/bgtr.svg") top right no-repeat, url("images/bgbl.svg") bottom left no-repeat, url("images/overlay.png"), linear-gradient(45deg, #5f796b, #3a4e59, #2f394e);
+				position: relative;
+				margin: 0;
+				background-image: url("images/overlay.png"), url("../../images/wall.jpg");
+				background-size: auto, cover;
+				background-position: top left, center center;
+				background-repeat: repeat, no-repeat;
 			}
 
 			.main > .content.style4 {
 				padding-top: 0;
 				background: #fff;
 			}
+
+			/* .main > .content.light{
+				position: relative;
+				margin: 0;
+				background-image: url("images/overlay.png"), url("../../images/style2.jpg");
+				background-size: auto, cover;
+				background-position: top left, center center;
+				background-repeat: repeat, no-repeat;
+			} */
+	
+
 
 /* Footer */
 
